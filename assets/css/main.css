@@ -3631,6 +3631,22 @@
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
+			width: 50%;
+			display: block;
+			background: #FFF;
+			padding: 8em;
+			text-align: left;
+			position: relative;
+		}
+		.no-pic{
+			-moz-transition: background 0.2s ease-in-out;
+			-webkit-transition: background 0.2s ease-in-out;
+			-ms-transition: background 0.2s ease-in-out;
+			transition: background 0.2s ease-in-out;
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
 			width: 100%;
 			display: block;
 			background: #FFF;
