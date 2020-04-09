@@ -11,85 +11,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		.intro {
-			padding-top: 320px;
-			padding-left: 80px;
-			padding-right: 80px;
-			padding-bottom: 320px;
-			background: url(images/bg-intro.jpg) no-repeat center fixed;
-			background-size: cover;
-			color: white;
-		}
-		.two {
-			padding-top: 320px;
-			padding-left: 80px;
-			padding-right: 80px;
-			padding-bottom: 320px;
-			background: url(images/pic13.jpg) no-repeat center fixed;
-			background-size: cover;
-			color: white;
-		}
-		.three {
-			padding-top: 320px;
-			padding-left: 80px;
-			padding-right: 80px;
-			padding-bottom: 320px;
-			background: url(images/pic12.jpg) no-repeat center fixed;
-			background-size: cover;
-			color: white;
-		}
-		.four {
-			padding-top: 320px;
-			padding-left: 80px;
-			padding-right: 80px;
-			padding-bottom: 320px;
-			background: url(images/pic14.jpg) no-repeat center fixed;
-			background-size: cover;
-			color: white;
-		}
-		/* Styling the bar itself */
-#topbar {
-    position:fixed;
-    bottom: -600px;
-    display: block;
-    z-index: 99999;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    color: #00000;
-    font-size: 25px;
-    text-align: center;
-    -webkit-box-shadow: 0 -8px 6px -6px black;
-       -moz-box-shadow: 0 -8px 6px -6px black;
-            box-shadow: 0 -8px 6px -6px black;
-    transition: bottom 1s;
-}
-/* Hiding the checkbox */
-#toggleTop {
-    display: none;
-}
-/* Styling the lables, to show and hide the bar */
-#showTop {
-    position: fixed;
-    z-index: 9999;
-    bottom: 0;
-    right: 30px;
-    display: block;
-    padding: 10px;
-    background-color: #fff;
-    color: #fff;
-}
-#hideTop {
-    float: right;
-    display: inline-block;
-}
-/* Displaying the bar when the checkbox is checked */
-#toggleTop:checked + #topbar {
-    transition: bottom 1s;
-    bottom:0px;
-}
-</style>
+			#topbar {
+	    position:fixed;
+	    bottom: -600px;
+	    display: block;
+	    z-index: 99999;
+	    box-sizing: border-box;
+	    width: 100%;
+	    padding: 10px;
+	    background-color: #fff;
+	    color: #00000;
+	    font-size: 25px;
+	    text-align: center;
+	    -webkit-box-shadow: 0 -8px 6px -6px black;
+	       -moz-box-shadow: 0 -8px 6px -6px black;
+	            box-shadow: 0 -8px 6px -6px black;
+	    transition: bottom 1s;
+			}
+			/* Hiding the checkbox */
+			#toggleTop {
+			    display: none;
+			}
+			/* Styling the lables, to show and hide the bar */
+			#showTop {
+			    position: fixed;
+			    z-index: 9999;
+			    bottom: 0;
+			    right: 30px;
+			    display: block;
+			    padding: 10px;
+			    background-color: #fff;
+			    color: #fff;
+			}
+			#hideTop {
+			    float: right;
+			    display: inline-block;
+			}
+			/* Displaying the bar when the checkbox is checked */
+			#toggleTop:checked + #topbar {
+			    transition: bottom 1s;
+			    bottom:0px;
+			}
+		</style>
 	</head>
 	<!-- Label to Show Notification bar -->
 <!-- The checkbox -->
@@ -125,23 +88,28 @@ Visit the <a href="https://ethicsbowlchina.com/resources.html">Resources</a> pag
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner">
 					<h1>Register Today for Ethics Bowl </br>Events across China!</h1>
 					<ul class="actions">
 						<li><a href="#one" class="button alt scrolly big">Continue</a></li>
 					</ul>
-				</div>
 			</section>
 
 		<!-- One -->
-			<article id="one">
-					<div class="intro" >
-<p>The Ethics Bowl is a competitive yet collaborative event in which students engage in philosophical debates on real-life ethical dilemmas. It differs from a traditional debate in that the central goal is to demonstrate the breadth and depth of thinking, rather than to overwhelm or dominate the opposing team. The Ethics Bowl is more than teaching students how to analyze ethical cases: It is to teach them how to think and discuss these issues in a civic community, where they become fellow citizens of social responsibilities. Data shows that this event teaches and promotes ethical awareness, critical thinking, civil discourse, civic engagement, and an appreciation for multiple points of view.</p>
+			<article id="one" class="post style1 alt">
+				<div class="content">
+					<div class="inner">
+						<p>The Ethics Bowl is a competitive yet collaborative event in which students engage in philosophical debates on real-life ethical dilemmas. It differs from a traditional debate in that the central goal is to demonstrate the breadth and depth of thinking, rather than to overwhelm or dominate the opposing team. The Ethics Bowl is more than teaching students how to analyze ethical cases: It is to teach them how to think and discuss these issues in a civic community, where they become fellow citizens of social responsibilities. Data shows that this event teaches and promotes ethical awareness, critical thinking, civil discourse, civic engagement, and an appreciation for multiple points of view.
+						</p>
+					</div>
+					<div class="postnav">
+						<a href="#banner" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
 				</div>
 			</article>
 
 		<!-- Two -->
-			<article id="two" class="post style1 alt two">
+			<article id="two" class="post style1 invert alt">
 				<div class="content">
 					<div class="inner">
 						<header>
@@ -161,7 +129,7 @@ Visit the <a href="https://ethicsbowlchina.com/resources.html">Resources</a> pag
 			</article>
 
 		<!-- Three -->
-			<article id="three" class="post style2 three">
+			<article id="three" class="post style2 alt">
 				<div class="content">
 					<div class="inner">
 						<header>
@@ -181,7 +149,7 @@ Visit the <a href="https://ethicsbowlchina.com/resources.html">Resources</a> pag
 			</article>
 
 		<!-- four -->
-			<article id="four" class="post style3 four">
+			<article id="four" class="post style3 invert alt">
 				<div class="content">
 					<div class="inner">
 						<header>
@@ -201,7 +169,7 @@ Visit the <a href="https://ethicsbowlchina.com/resources.html">Resources</a> pag
 			</article>
 
 		<!-- Six -->
-			<article id="five" class="post invert style3 alt">
+			<article id="five" class="post style1 alt">
 				<div class="content">
 					<div class="inner">
 						<header>
@@ -211,7 +179,7 @@ Visit the <a href="https://ethicsbowlchina.com/resources.html">Resources</a> pag
 					</div>
 					<div class="postnav">
 						<a href="#four" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-						<a href="#" class="scrolly next disabled"><span class="icon fa-chevron-down"></span></a>
+						<a href="#banner" class="scrolly prev"><span class="icon fa-chevron-down"></span></a>
 					</div>
 				</div>
 			</article>
