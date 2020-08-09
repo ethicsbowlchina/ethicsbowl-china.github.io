@@ -81,6 +81,7 @@
 }
 
 .timeline__post{
+  position: relative;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   border-left: 3px solid var(--uiTimelineMainColor);
