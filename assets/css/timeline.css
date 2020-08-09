@@ -1,6 +1,6 @@
 
 .timeline{
-  --uiTimelineMainColor: var(--timelineMainColor, #222);
+  --uiTimelineMainColor: var(--timelineMainColor, #4a0093);
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
 
   position: relative;
@@ -137,7 +137,7 @@
   }
 }
 
-.timeline{4a0093
+.timeline{
   --timelineMainColor: #4a0093;
   font-size: 16px;
 }
