@@ -137,8 +137,8 @@
   }
 }
 
-.timeline{
-  --timelineMainColor: #4557bb;
+.timeline{4a0093
+  --timelineMainColor: #4a0093;
   font-size: 16px;
 }
 
@@ -167,7 +167,6 @@ body{
   font-size: 1.6rem;
   color: #222;
 
-  background-color: #f0f0f0;
   margin: 0;
   -webkit-overflow-scrolling: touch;   
   overflow-y: scroll;
@@ -192,31 +191,4 @@ p:last-child{
   margin-left: auto;
   margin-right: auto;
   order: 1;
-}
-
-/*
-=====
-LinkedIn
-=====
-*/
-
-.linkedin{
-  background-color: #fff;
-  text-align: center;
-}
-
-.linkedin__container{
-  max-width: 1000px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;  
-}
-
-.linkedin__text{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.linkedin__link{
-  color: #ff5c5c;
 }
