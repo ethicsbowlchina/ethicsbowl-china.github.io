@@ -1,51 +1,149 @@
 <!DOCTYPE HTML>
-		<!--
-			Binary by TEMPLATED
-			templated.co @templatedco
-			Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-		-->
-		<html>
-		<head>
+<html><head>
 		  <title>About | Ethics Bowl China</title>
-		  <meta charset="utf-8" />
-		  <meta name="viewport" content="width=device-width, initial-scale=1" />
-		  <link rel="stylesheet" href="assets/css/main.css" />
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/main.css">
+
+
 		  <style>
-			  /* Three columns side by side */
-.column {
+
+.container{
+  width: 480px;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.img-container{
+  width: 40%;
+  height: 100%;
   float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  position: relative;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.img-container img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.content{
+  width: 60%;
+  height: 100%;
+  float: left;
+  padding: 30px 40px;
+  box-sizing: border-box;
 }
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
+.head{
+  padding-bottom: 30px;
 }
 
-/* Clear floats */
-.container::after, .row::after {
+.head p{
+  font-size: 28px;
+  color: #444444;
+  font-weight: 600;
+}
+
+.head span{
+  color: #aaabaf;
+  font-size: 14px;
+}
+
+.data{
+  width: 90%;
+  overflow: hidden;
+}
+
+.inner-data{
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: #aaabaf;
+}
+
+.inner-data p{
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.inner-data span{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.img-container:before{
   content: "";
-  clear: both;
-  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 30px solid #1DA1F2;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #1DA1F2;
+  border-bottom: 30px solid transparent;
+  cursor: pointer;
+  border-top-left-radius: 5px;
 }
 
-.title {
-  color: grey;
+.img-container:after{
+  font-family: fontawesome;
+  content:"\f099";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.floating-icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 38%;
+  right: -5%;
+  background: #1DA1F2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.floating-icon .fa{
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  color: #fff;
+  font-size: 20px;
+  transition: all 1s ease;
+}
+
+.floating-icon.active .fa{
+    transform: rotate(45deg); 
+    transition: all 1s ease;
+}
+
+.btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: #1DA1F2;
+  padding: 6px 15px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.btn.active{
+  opacity: 1;
 }
 </style>
 		</head>
@@ -56,7 +154,7 @@
 		<label for="toggleTop" id="hideTop">X</label>
 		</div>
 		-->
-		<body>
+		<body class="">
 		
 		  <!-- Header -->
 		    <header id="header">
@@ -67,17 +165,7 @@
 		    </header>
 		
 		    <!-- Nav -->
-					<nav id="menu">
-						<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="blog.html">News & Timeline</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="faqs.html">FAQs</a></li>
-					<li><a href="https://app.ethicsbowlchina.com/">Online App</a></li>
-          				<li><a href="ieo.html">International Program</a></li>
-				</ul>
-						</nav>
+					
 			
 						<section id="main">
 							<div class="inner">
@@ -86,7 +174,7 @@
 									<p><b>What you need to know about the Ethics Bowl China and the regional Ethics Bowls it oversees.</b></p>
 					</header>
 			          <div class="image">
-			            <img src="https://s1.ax1x.com/2020/04/20/JlS3nO.jpg" width="100%" alt="" data-position="50% center" />
+			            <img src="https://s1.ax1x.com/2020/04/20/JlS3nO.jpg" width="100%" alt="" data-position="50% center">
 			          </div>
 			          <section id="what-is-eb">
 									<h2>What is the Ethics Bowl?</h2>
@@ -95,30 +183,29 @@
 			The Ethics bowl gives students the opportunity to learn about applied ethics through the analysis, research, and critical discussion of case studies that incorporate real-world ethical conflicts from politics, business, international affairs, popular culture, and their personal lives. For the 2020 case set, please visit the <a href="resources.html">resources page</a>.
 									</p>
 							</section>
-			        <hr />
+			        <hr>
 			
 			        <section id="what-is-ebc">
 			          <h2>What is the Ethics Bowl China?</h2>
           <p>
-			            The Ethics Bowl China (EBC) team was originally organizers of the Shanghai Interscholastic Ethics Bowl (SIEB). After the huge success of the SIEB, we expanded the Ethics Bowl program to other provinces in China. The EBC now oversees several regional Ethics Bowls across the country (see on our <a href="index.html">home page</a>) and provides all kinds of support for our regional organizers, including promotions, fundraising, materials, and international collaboration opportunities with our partners. Our aim is to make philosophical and ethical discussions more available to the public, especially among middle and high school students. We believe that through such kinds of discourse, not only can we reach broad consensus on certain ethical dilemmas as a community, but we also teach students how to engage in similar public discussions as citizens in our society. Events under the EBC are modeled after the National High School Ethics Bowl in the United States, hosted by the University of North Carolina at Chapel Hill. We are thankful for the generous support from director Alex Richardson and the NHSEB staff!      </section>
-			      <hr />
+			            The Ethics Bowl China (EBC) team was originally organizers of the Shanghai Interscholastic Ethics Bowl (SIEB). After the huge success of the SIEB, we expanded the Ethics Bowl program to other provinces in China. The EBC now oversees several regional Ethics Bowls across the country (see on our <a href="index.html">home page</a>) and provides all kinds of support for our regional organizers, including promotions, fundraising, materials, and international collaboration opportunities with our partners. Our aim is to make philosophical and ethical discussions more available to the public, especially among middle and high school students. We believe that through such kinds of discourse, not only can we reach broad consensus on certain ethical dilemmas as a community, but we also teach students how to engage in similar public discussions as citizens in our society. Events under the EBC are modeled after the National High School Ethics Bowl in the United States, hosted by the University of North Carolina at Chapel Hill. We are thankful for the generous support from director Alex Richardson and the NHSEB staff!      </p></section>
+			      <hr>
 			
 								<!-- Text -->
 									<section id="people">
 			              <h2>People</h2>
 										<h3>Director &amp; Founder</h3>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://s1.ax1x.com/2020/08/12/avCTdP.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Leo Huang</h2>
-        <p>Mr. Leo Huang is the founder and director of the Shanghai Interscholastic Ethics Bowl (SIEB) and the Ethics Bowl China (EBC). Under his leadership, the EBC program expanded to several cities across the country and gained significant influence among high school students nationwide. He also served as the co-organizer of the first International Ethics Bowl program.</p>
-        <p>info@ethicsbowlchina.com</p>
-      </div>
-    </div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://s1.ax1x.com/2020/08/12/avCTdP.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Leo Huang</h5>
+    <p class="card-text">Mr. Leo Huang is the director and founder of the Shanghai Interscholastic Ethics Bowl (SIEB) and the Ethics Bowl China (EBC). Under his leadership, the EBC program expanded to several cities across the country and gained significant influence among high school students nationwide. He also served as the co-organizer of the first International Ethics Bowl program.</p>
+    
   </div>
 </div>
+<br>
+<br>
+
 
 										<h3>Ethics Bowl China Team</h3>
 										<p>
@@ -138,9 +225,9 @@
 											ADAC High School Ethics Bowl (TBA)<br>
 										</p>
 			    			</section>
-			          <hr />
+			          <hr>
 
-			          </p>
+			          <p></p>
 					<section id="partners">
 									<h2>Partners</h2>
 									<p>
@@ -148,7 +235,7 @@
 										<a href="https://ethicsolympiad.org">Ethics Olympiad</a>
 									</p>
 							</section>
-			        <hr />
+			        <hr>
 
         <section id="websites">
 			          <h2>Regional Bowls Websites</h2>
@@ -158,7 +245,7 @@
 			            <a href="https://ethicsbowlchina.com/scebc">Sichuan Chapter of the Ethics Bowl China</a><br>
 			          </p>
      </section>
-			      <hr />
+			      <hr>
 			
 			        <section id="contact">
 			          <h2>Contact</h2>
@@ -177,7 +264,7 @@
 					<li><a href="https://www.youtube.com/channel/UC3VG_IyE0O_FI4F3BEnZAmg/playlists" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
 				</ul>
 				<div class="copyright">
-					&copy; Ethics Bowl China. Website created by Leo Huang</a>.
+					© Ethics Bowl China. Website created by Leo Huang.
 				</div>
 			</footer>
 
@@ -188,5 +275,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+	
+
+<nav id="menu">
+						<ul class="links">
+					<li><a href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Home</a></li>
+					<li><a href="about.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">About</a></li>
+					<li><a href="blog.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">News &amp; Timeline</a></li>
+					<li><a href="resources.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resources</a></li>
+					<li><a href="faqs.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">FAQs</a></li>
+					<li><a href="https://app.ethicsbowlchina.com/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Online App</a></li>
+          				<li><a href="ieo.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">International Program</a></li>
+				</ul>
+						<a href="#menu" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></nav></body></html>
